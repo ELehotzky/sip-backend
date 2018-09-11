@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+	resources :users
+	resources :drinks
+	resources :ingredients
+	
 
 	# user :api do
 	# 	user :v1 do 
