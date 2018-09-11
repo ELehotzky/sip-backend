@@ -36,10 +36,8 @@ ActiveRecord::Schema.define(version: 2018_09_11_185516) do
   create_table "ingredients", force: :cascade do |t|
     t.string "name"
     t.boolean "alcoholic"
-    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_ingredients_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -52,5 +50,4 @@ ActiveRecord::Schema.define(version: 2018_09_11_185516) do
   add_foreign_key "drink_ingredients", "drinks"
   add_foreign_key "drink_ingredients", "ingredients"
   add_foreign_key "drinks", "users"
-  add_foreign_key "ingredients", "users"
 end
