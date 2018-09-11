@@ -1,3 +1,3 @@
 class Ingredient < ApplicationRecord
-  belongs_to :user
+  has_many :drinks, through: :drink_ingredients
 end

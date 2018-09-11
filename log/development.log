@@ -1,85 +1,352 @@
-  [1m[35m (419.1ms)[0m  [1m[35mCREATE DATABASE "sip_development" ENCODING = 'unicode'[0m
-  ↳ bin/rails:9
-  [1m[35m (302.5ms)[0m  [1m[35mCREATE DATABASE "sip_test" ENCODING = 'unicode'[0m
-  ↳ bin/rails:9
-  [1m[35m (9.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
-  ↳ bin/rails:9
-  [1m[35m (3.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
-  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6518299231800026580)[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+Migrating to CreateDrinkIngredients (20180911185516)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (5.2ms)[0m  [1m[35mDROP TABLE "drink_ingredients"[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.7ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20180911185516"]]
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(6518299231800026580)[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
   [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6518299231800026580)[0m
-  ↳ bin/rails:9
-  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  ↳ bin/rails:9
-Migrating to CreateUsers (20180910220121)
-  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
-  ↳ bin/rails:9
-  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "student" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
-  ↳ db/migrate/20180910220121_create_users.rb:3
-  [1m[36mActiveRecord::SchemaMigration Create (1.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180910220121"]]
-  ↳ bin/rails:9
-  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
-  ↳ bin/rails:9
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+Migrating to CreateIngredients (20180910221009)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (3.7ms)[0m  [1m[35mDROP TABLE "ingredients"[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.8ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20180910221009"]]
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(6518299231800026580)[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6518299231800026580)[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
 Migrating to CreateDrinks (20180910220412)
-  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
-  ↳ bin/rails:9
-  [1m[35m (5.2ms)[0m  [1m[35mCREATE TABLE "drinks" ("id" bigserial primary key, "name" character varying, "likes" integer, "user_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_ea1b234e79"
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (3.5ms)[0m  [1m[35mDROP TABLE "drinks"[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.7ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20180910220412"]]
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(6518299231800026580)[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6518299231800026580)[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+Migrating to CreateUsers (20180910220121)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (2.9ms)[0m  [1m[35mDROP TABLE "users"[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.6ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20180910220121"]]
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (7.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(6518299231800026580)[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6518299231800026580)[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+Migrating to CreateUsers (20180910220121)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (11.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "student" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20180910220121_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180910220121"]]
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+Migrating to CreateDrinks (20180910220412)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE TABLE "drinks" ("id" bigserial primary key, "name" character varying, "likes" integer, "user_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_ea1b234e79"
 FOREIGN KEY ("user_id")
   REFERENCES "users" ("id")
 )[0m
   ↳ db/migrate/20180910220412_create_drinks.rb:3
-  [1m[35m (1.0ms)[0m  [1m[35mCREATE  INDEX  "index_drinks_on_user_id" ON "drinks"  ("user_id")[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE  INDEX  "index_drinks_on_user_id" ON "drinks"  ("user_id")[0m
   ↳ db/migrate/20180910220412_create_drinks.rb:3
   [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180910220412"]]
-  ↳ bin/rails:9
-  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
-  ↳ bin/rails:9
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
 Migrating to CreateIngredients (20180910221009)
-  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
-  ↳ bin/rails:9
-  [1m[35m (5.1ms)[0m  [1m[35mCREATE TABLE "ingredients" ("id" bigserial primary key, "name" character varying, "alcoholic" boolean, "user_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_3baa1008a1"
-FOREIGN KEY ("user_id")
-  REFERENCES "users" ("id")
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (4.3ms)[0m  [1m[35mCREATE TABLE "ingredients" ("id" bigserial primary key, "name" character varying, "alcoholic" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20180910221009_create_ingredients.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180910221009"]]
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+Migrating to CreateDrinkIngredients (20180911185516)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (4.2ms)[0m  [1m[35mCREATE TABLE "drink_ingredients" ("id" bigserial primary key, "drink_id" bigint, "ingredient_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_bbd76f4cc8"
+FOREIGN KEY ("drink_id")
+  REFERENCES "drinks" ("id")
+, CONSTRAINT "fk_rails_2ad34e6dd1"
+FOREIGN KEY ("ingredient_id")
+  REFERENCES "ingredients" ("id")
 )[0m
-  ↳ db/migrate/20180910221009_create_ingredients.rb:3
-  [1m[35m (1.2ms)[0m  [1m[35mCREATE  INDEX  "index_ingredients_on_user_id" ON "ingredients"  ("user_id")[0m
-  ↳ db/migrate/20180910221009_create_ingredients.rb:3
-  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180910221009"]]
-  ↳ bin/rails:9
+  ↳ db/migrate/20180911185516_create_drink_ingredients.rb:3
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE  INDEX  "index_drink_ingredients_on_drink_id" ON "drink_ingredients"  ("drink_id")[0m
+  ↳ db/migrate/20180911185516_create_drink_ingredients.rb:3
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX  "index_drink_ingredients_on_ingredient_id" ON "drink_ingredients"  ("ingredient_id")[0m
+  ↳ db/migrate/20180911185516_create_drink_ingredients.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180911185516"]]
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
   [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
-  ↳ bin/rails:9
-  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
-  ↳ bin/rails:9
-  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
-  ↳ bin/rails:9
-  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-09-11 18:50:54.875169"], ["updated_at", "2018-09-11 18:50:54.875169"]]
-  ↳ bin/rails:9
-  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
-  ↳ bin/rails:9
-  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(6518299231800026580)[0m
-  ↳ bin/rails:9
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(6518299231800026580)[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  ↳ bin/rails:9
-  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  ↳ bin/rails:9
-  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
-  ↳ bin/rails:9
-  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  ↳ bin/rails:9
-  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
-  ↳ bin/rails:9
-  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  ↳ bin/rails:9
-  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
-  ↳ bin/rails:9
-  [1m[35m (145.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "sip_development"[0m
-  ↳ bin/rails:9
-  [1m[35m (140.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "sip_test"[0m
-  ↳ bin/rails:9
-  [1m[35m (318.2ms)[0m  [1m[35mCREATE DATABASE "sip_development" ENCODING = 'unicode'[0m
-  ↳ bin/rails:9
-  [1m[35m (308.9ms)[0m  [1m[35mCREATE DATABASE "sip_test" ENCODING = 'unicode'[0m
-  ↳ bin/rails:9
-  [1m[35m (0.7ms)[0m  [1m[35mCREATE DATABASE "sip_development" ENCODING = 'unicode'[0m
-  ↳ bin/rails:9
-  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE "sip_test" ENCODING = 'unicode'[0m
-  ↳ bin/rails:9
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[36mDrink Load (0.6ms)[0m  [1m[34mSELECT  "drinks".* FROM "drinks" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/api/v1/drinks" for 127.0.0.1 at 2018-09-11 15:52:59 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/rack/logger.rb:38
+Processing by Api::V1::DrinksController#index as HTML
+  [1m[36mDrink Load (0.9ms)[0m  [1m[34mSELECT "drinks".* FROM "drinks"[0m
+  ↳ app/controllers/api/v1/drinks_controller.rb:3
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.47ms)
+Completed 200 OK in 22ms (Views: 12.3ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/api/v1/ingredients" for 127.0.0.1 at 2018-09-11 15:53:13 -0500
+Processing by Api::V1::IngredientsController#index as HTML
+  [1m[36mIngredient Load (1.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/api/v1/ingredients_controller.rb:3
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.06ms)
+Completed 200 OK in 11ms (Views: 1.7ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/api/v1/iusers" for 127.0.0.1 at 2018-09-11 15:53:19 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/iusers"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-09-11 15:53:27 -0500
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:4
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.07ms)
+Completed 200 OK in 9ms (Views: 2.3ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-09-11 15:53:36 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-09-11 16:12:48 -0500
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:4
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.05ms)
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/ingredient" for 127.0.0.1 at 2018-09-11 16:12:54 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/ingredient"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/api/v1/ingredients" for 127.0.0.1 at 2018-09-11 16:12:57 -0500
+Processing by Api::V1::IngredientsController#index as HTML
+  [1m[36mIngredient Load (1.0ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/api/v1/ingredients_controller.rb:3
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.13ms)
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-09-11 16:21:06 -0500
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:4
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.06ms)
+Completed 200 OK in 10ms (Views: 1.8ms | ActiveRecord: 5.6ms)
+
+
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/kells/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/commands/rake/rake_command.rb:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "student", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Kelly"], ["student", false], ["created_at", "2018-09-11 21:24:29.198187"], ["updated_at", "2018-09-11 21:24:29.198187"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "student", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Erica"], ["student", true], ["created_at", "2018-09-11 21:24:29.201646"], ["updated_at", "2018-09-11 21:24:29.201646"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "student", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Cassandra"], ["student", true], ["created_at", "2018-09-11 21:24:29.203607"], ["updated_at", "2018-09-11 21:24:29.203607"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/api/v1/users" for 127.0.0.1 at 2018-09-11 16:24:55 -0500
+Processing by Api::V1::UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/api/v1/users_controller.rb:4
+No serializer found for resource: #<User id: 1, name: "Kelly", student: false, created_at: "2018-09-11 21:24:29", updated_at: "2018-09-11 21:24:29">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with User::ActiveRecord_Relation (6.36ms)
+Completed 200 OK in 34ms (Views: 26.9ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2018-09-11 16:24:55 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
