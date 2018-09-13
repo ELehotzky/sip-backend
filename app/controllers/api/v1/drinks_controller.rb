@@ -1,6 +1,6 @@
 class Api::V1::DrinksController < ApplicationController
   def index 
-    render json: Drink.all
+    render json: Drink.paginate(page: params[:page], per_page: params[:per_page])
   end
 
   def show 

@@ -10,4 +10,6 @@ class Drink < ApplicationRecord
 		self.user_id ||= 1
 	end
 
+	self.per_page = 2
+
 end
