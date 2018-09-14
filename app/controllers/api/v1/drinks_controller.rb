@@ -12,7 +12,8 @@ class Api::V1::DrinksController < ApplicationController
   end 
 
   def create 
-    render json: Drink.create(drink_params)
+    # byebug
+    drink = Drink.new(drink_params)
     if drink.save 
       render json: drink
     else 
@@ -23,6 +24,6 @@ class Api::V1::DrinksController < ApplicationController
   private
   
   def drink_params
-    params.require(:drink).permit(:name, :likes, :user_id)
+    params.require(:drink).permit(:name, :image, :ingredients, :likes, :user_id)
   end
 end
