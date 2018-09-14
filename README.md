@@ -27,7 +27,7 @@ Things you may want to cover:
 
 **Backend code for "Sip" application**
 
-Using ruby '2.5.1'
+Using ruby '2.5.1'<br>
 Before use, the user will need to seed their local database.
 
 **Sip** is an app that offers information about alcoholic and non-alcoholic drinks, including their ingredients and instructions for making.<br>
