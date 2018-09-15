@@ -26,6 +26,8 @@ ActiveRecord::Schema.define(version: 2018_09_11_185516) do
 
   create_table "drinks", force: :cascade do |t|
     t.string "name"
+    t.string "image"
+    t.string "instructions"
     t.integer "likes"
     t.bigint "user_id"
     t.datetime "created_at", null: false
